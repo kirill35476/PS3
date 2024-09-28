@@ -1,12 +1,12 @@
-class Tank:
-    def __init__(self,model,fuel,hp,ammo,x,y):
-        self.model = model
-        self.fuel = fuel
-        self.hp = hp
-        self.ammo = ammo
-        self.y = y
-        self.x= x
-
-tank1 = Tank('T34',100,100,50,0,0)
-print(f'Танк1: {tank1.model},Топливо: {tank1.fuel},Здоровье: {tank1.hp},'
-      f'Патроны:{tank1.ammo},Кординаты:({tank1.x},{tank1.y})')
+from tank import Tank
+t1 = Tank(0,0,"Т-14 Армат",100,)
+t2 = Tank(x=100,y=100,model="Т-90М",ammo = 80,)
+t1.fire()
+t1.fire()
+t1.right()
+t1.right()
+t1.dackward()
+t1.dackward()
+print(t1)
+print(t2)
+print(f'Создано танков:{Tank.count}')
